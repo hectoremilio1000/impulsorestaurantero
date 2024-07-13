@@ -156,18 +156,18 @@ export default function Home() {
             <div className="flex items-center whitespace-nowrap rail-left">
               <div className="whitespace-nowrap inline-block  animate-marquee">
                 <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
-                  RESERVA
+                  IMPULSO
                 </h1>
                 <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none  ">
-                  AHORA
+                  RESTAURANTERO
                 </h1>
               </div>
               <div className="whitespace-nowrap  inline-block animate-marquee">
                 <h1 className="inline-block text-white text-[70px] md:text-[140px] leading-none font-bold">
-                  RESERVA
+                  IMPULSO
                 </h1>
                 <h1 className="inline-block text-[#3eeb91] text-[70px] md:text-[140px] font-bold leading-none">
-                  AHORA
+                  RESTAURANTERO
                 </h1>
               </div>
               <div className="whitespace-nowrap inline-block  animate-marquee">
