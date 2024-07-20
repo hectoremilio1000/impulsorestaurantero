@@ -8,6 +8,10 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap"
+          rel="stylesheet"
+        />
         <script
           async
           src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}

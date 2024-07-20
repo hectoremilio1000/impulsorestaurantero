@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
-import logo from "../../data/imagenes/logo_alta_sin_nombre.png";
+import logo from "../../data/imagenes/logoPalabrasFinalImpulsoRestaurantero.png";
 
 // css navbar
 
@@ -53,7 +53,7 @@ function NavBar() {
 
   return (
     <div className={navbar ? "header-container sticky" : "header-container"}>
-      <div className="max-w-[1184px] flex items-center justify-between flex-wrap w-full mx-auto  px-4">
+      <div className="max-w-[1184px] flex items-center justify-between flex-wrap w-full mx-auto  px-0 md:px-6">
         {/* <Link href="/">
         <Image src={logo} width={100}
           alt="llorona" priority />
@@ -62,7 +62,12 @@ function NavBar() {
         <div className="header-logo">
           <div>
             <Link href="/" className="logo ">
-              <Image src={logo} width={100} alt="llorona" priority />
+              <Image
+                src={logo}
+                width={250}
+                alt="Impulso Restaurantero"
+                priority
+              />
             </Link>
           </div>
 
@@ -109,7 +114,7 @@ function NavBar() {
                     href="/reserva"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Reserva
+                    Casos de éxito
                   </Link>
                 </li>
                 <li key="2">
@@ -117,7 +122,7 @@ function NavBar() {
                     href="/menullorona"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Menu
+                    Sobre nosotros
                   </Link>
                 </li>
                 <li key="3">
@@ -125,25 +130,9 @@ function NavBar() {
                     href="/mezcal"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Mezcal
+                    Contacto
                   </Link>
                 </li>
-                {/* <li key="4">
-                  <Link
-                    href="/salsavivo"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Salsa en Vivo
-                  </Link>
-                </li>
-                <li key="5">
-                  <Link
-                    href="/paquetes"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Paquetes navideños
-                  </Link>
-                </li> */}
               </>
             ) : (
               <>
@@ -158,7 +147,7 @@ function NavBar() {
                     href="/reserva"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Book Now
+                    Case Studies
                   </Link>
                 </li>
                 <li key="2">
@@ -166,7 +155,7 @@ function NavBar() {
                     href="/menullorona"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Menu
+                    About
                   </Link>
                 </li>
                 <li key="3">
@@ -174,7 +163,7 @@ function NavBar() {
                     href="/mezcal"
                     className="nav-link hover:text-emerald-500"
                   >
-                    Mezcal
+                    Contact
                   </Link>
                 </li>
                 {/* <li key="4">
@@ -185,14 +174,6 @@ function NavBar() {
                     Live salsa
                   </Link>
                 </li> */}
-                <li key="5">
-                  <Link
-                    href="/mixologia"
-                    className="nav-link hover:text-emerald-500"
-                  >
-                    Mixology
-                  </Link>
-                </li>{" "}
               </>
             )}
           </>
