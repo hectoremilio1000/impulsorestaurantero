@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Steps, Button, Form, Input, Select, message } from "antd";
+import dynamic from "next/dynamic";
+import { message } from "antd";
+
 import axios from "axios";
+
+import { Form, Steps, Button, Input, Select } from "antd";
 
 const { Step } = Steps;
 const { Option } = Select;
 
-const RestaurantSurvey = () => {
+function Encuesta() {
   const [current, setCurrent] = useState(0);
   const [form] = Form.useForm();
   const [formData, setFormData] = useState({});
@@ -46,6 +50,7 @@ const RestaurantSurvey = () => {
 
   return (
     <div style={{ padding: "20px" }}>
+      <p>hola</p>
       <Steps current={current}>
         <Step title="Información Básica" />
         <Step title="Detalles Operacionales" />
@@ -95,7 +100,6 @@ const RestaurantSurvey = () => {
                 <Option value="italian">Italiana</Option>
                 <Option value="mexican">Mexicana</Option>
                 <Option value="chinese">China</Option>
-                {/* Añadir más opciones según sea necesario */}
               </Select>
             </Form.Item>
             <Form.Item
@@ -347,6 +351,6 @@ const RestaurantSurvey = () => {
       </Form>
     </div>
   );
-};
+}
 
-export default RestaurantSurvey;
+export default Encuesta;
