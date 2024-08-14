@@ -21,8 +21,8 @@
     ),
     url("https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/Restaurantes.png");
   background-position: 0 0, 50% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-size: contain;
   width: 100%;
   display: flex;
   position: absolute;
