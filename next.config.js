@@ -1,8 +1,9 @@
-/**
- * @type {import('next').NextConfig}
- */
+// @ts-check
+
+/** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: "export",
   transpilePackages: [
     // antd & dependencies
     "@ant-design",
@@ -45,7 +46,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  output: "export",
 };
 
 module.exports = nextConfig;
