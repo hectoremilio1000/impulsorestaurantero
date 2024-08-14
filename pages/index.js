@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import QuickInfo from "../components/Quickinfo/index";
 import QuickInfo2 from "../components/QuickInfo2/index";
 import QuickInfo3 from "../components/QuickInfo3/index";
@@ -133,38 +134,83 @@ export default function Home() {
           <div>
             <MySwiper />
 
-            <div className="flex justify-center -mt-10">
-              <div className="bg-black text-white text-center py-10 px-6 rounded-lg mt-10 w-11/12 md:w-2/3 lg:w-11/12 -mt-20 z-20">
-                <h2 className="text-2xl md:text-4xl font-extrabold mb-4">
-                  TWO DAYS TO CHANGE YOUR GYM FOREVER.
-                </h2>
-                <p className="text-lg md:text-xl mb-2">
-                  GYM GROWTH WORKSHOP - OCT 8-9TH
-                </p>
-                <p className="text-yellow-600 font-bold text-base md:text-lg">
-                  DON'T MISS OUT. FIRST 100 GYM OWNERS ONLY
-                </p>
-                <div className="flex justify-center items-center space-x-6 mt-6">
+            <div
+              id="section-info-banner"
+              className="justify-center bg-black py-[11px] flex-col md:flex-row flex overflow-hidden items-center w-full"
+            >
+              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+                <a
+                  href="http://ww2.gymlaunch.com/gymgrowth"
+                  target="_blank"
+                  className="inline-block"
+                >
+                  <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
+                    <span className="text-span-142">
+                      TWO DAYS TO CHANGE YOUR GYM FOREVER.
+                    </span>{" "}
+                    <br />
+                    <span className="text-span-4 text-[#fff]">
+                      GYM GROWTH WORKSHOP - OCT 8-9TH
+                    </span>
+                    <br />
+                    <span className="span4-tw">
+                      DON'T MISS OUT. FIRST 100 GYM OWNERS ONLY
+                    </span>
+                  </h1>
+                </a>
+              </div>
+              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+                <a
+                  href="http://ww2.gymlaunch.com/gymgrowth"
+                  target="_blank"
+                  className="inline-block"
+                  data-cmp-ab="2"
+                >
                   <img
-                    src="https://logo.clearbit.com/yahoo.com"
-                    alt="Yahoo Finance"
-                    className="h-8 md:h-10"
+                    src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png"
+                    loading="lazy"
+                    width="217"
+                    sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
+                    alt=""
+                    srcset="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White-p-500.png 500w, https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png 770w"
+                    className="image-8"
+                    data-cmp-ab="2"
+                    data-cmp-info="10"
                   />
-                  <img
-                    src="https://logo.clearbit.com/entrepreneur.com"
-                    alt="Entrepreneur"
-                    className="h-8 md:h-10"
-                  />
-                  <img
-                    src="https://logo.clearbit.com/muscleandfitness.com"
-                    alt="Muscle & Fitness"
-                    className="h-8 md:h-10"
-                  />
-                  <img
-                    src="https://logo.clearbit.com/facebook.com"
-                    alt="Facebook"
-                    className="h-8 md:h-10"
-                  />
+                </a>
+              </div>
+            </div>
+            <div id="section-clientes" className="bg-white overflow-hidden">
+              <div className="max-w-[95%] mx-auto bg-black rounded-b-[25px] flex items-center pt-[13px] pb-[18px] px-[30px]">
+                <div className="flex w-[90%] gap-[20px]">
+                  <div
+                    id="block-clientes"
+                    className="overflow-hidden flex items-center relative justify-start"
+                  >
+                    <div className="gradiente"></div>
+                    <div className="clientes flex">
+                      <img
+                        src="https://logo.clearbit.com/yahoo.com"
+                        alt="Yahoo Finance"
+                        className="h-8 md:h-10"
+                      />
+                      <img
+                        src="https://logo.clearbit.com/entrepreneur.com"
+                        alt="Entrepreneur"
+                        className="h-8 md:h-10"
+                      />
+                      <img
+                        src="https://logo.clearbit.com/muscleandfitness.com"
+                        alt="Muscle & Fitness"
+                        className="h-8 md:h-10"
+                      />
+                      <img
+                        src="https://logo.clearbit.com/facebook.com"
+                        alt="Facebook"
+                        className="h-8 md:h-10"
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

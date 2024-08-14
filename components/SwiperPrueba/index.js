@@ -12,24 +12,24 @@ const MySwiper = () => {
   return (
     <div className={styles.sectionHero}>
       <div className={styles.content}>
-        <div className={styles.blockHero}>
+        <div className={styles["block-hero"]}>
           <div className={styles.subtitle}>DUEÑOS RESTAURANTEROS</div>
-          <h1 className="inline-block text-white text-[30px] md:text-[100px] font-bold px-4 py-2 w-full text-center">
-            ¿QUIERES MÁS <br /> CLIENTES?
+          <h1 className={`${styles["heading-13"]} ${styles.desktop}`}>
+            ¿QUIERES MÁS <br /> CLIENTES? <br />
+          </h1>
+          <h1 className={`${styles["heading-13"]} ${styles.mobile}`}>
+            ¿QUIERES MÁS <br /> CLIENTES? <br />
           </h1>
 
-          <div
-            className={`${styles.largeText} ${styles.home} ${styles.mobile}`}
-          >
+          <div className={`${styles.largeText} ${styles.mobile}`}>
             Obtener más clientes puede ser difícil. Nosotros lo hacemos fácil.
             Accede a nuestra clase maestra GRATUITA "Llena tu gimnasio en 90
             días" a continuación.
             <br />
           </div>
-          <div
-            className={`${styles.largeText} ${styles.home} ${styles.desktop}`}
-          >
-            Descarga el estudio de 33 restaurantes que están ARRASANDO en 2024 y
+          <div className={`${styles.largeText} ${styles.desktop}`}>
+            Descarga el estudio de 33 restaurantes que están ARRASANDO en 2024 y{" "}
+            <br />
             descubre los 7 Modelos de Éxito que siguieron para construir
             restaurantes increíblemente lucrativos
             <br />

@@ -36,7 +36,6 @@
   content: "";
 }
 
-
 .nav-link {
   display: block;
   text-decoration: none;
@@ -46,8 +45,8 @@
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.5s;
+  white-space: nowrap;
 }
-
 
 .header-icons {
   display: flex;
@@ -59,19 +58,13 @@
   color: #fff;
 }
 
-
 @media only screen and (min-width: 768px) {
-
-
-
-
   .toggle-icon {
     display: none;
   }
 }
 
 @media (max-width: 650px) {
-
   /* css de nabvar */
   .header-container {
     padding: 10px 20px !important;
@@ -94,7 +87,7 @@
     background-color: #fff;
     width: 0;
     padding: 0;
-    transition: all ease-in .5s;
+    transition: all ease-in 0.5s;
     visibility: hidden;
     overflow: hidden;
   }

@@ -8,7 +8,6 @@
   display: flex;
   position: relative;
   overflow: hidden;
-  height: 90vh;
 }
 
 .blueGradientHero {
@@ -22,8 +21,8 @@
     ),
     url("https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/Restaurantes.png");
   background-position: 0 0, 50% 100%;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 90vh;
   display: flex;
   position: absolute;
   top: 0;
@@ -85,12 +84,13 @@
   -webkit-background-clip: text;
   background-clip: text;
   width: 70%;
-  font-family: Rohnrounded Black, sans-serif;
+  /* font-family: Rohnrounded Black, sans-serif; */
   font-size: 100px;
+  font-weight: 800;
   line-height: 100px;
 }
 
-.desktop {
+/* .desktop {
   width: auto;
   margin-bottom: 0;
   line-height: 145%;
@@ -98,42 +98,83 @@
 
 .mobile {
   display: none;
-}
+} */
 
 .largeText {
   color: #fff;
   letter-spacing: 1px;
   padding-left: 95px;
   padding-right: 95px;
-  font-family: Rohnrounded Regular, sans-serif;
   font-weight: 500;
+  font-size: 18px;
 }
-
-.home {
-  color: #fff;
-  letter-spacing: 1px;
-  padding-left: 95px;
-  padding-right: 95px;
-  font-family: Rohnrounded Regular, sans-serif;
-  font-weight: 500;
+.largeText.desktop {
+  line-height: 145%;
+}
+.largeText.mobile {
+  display: none;
 }
 
 .button4 {
-  .button-4 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.025em;
+  background-color: transparent;
+  background-image: linear-gradient(20deg, #6e5e19, #d5c345);
+  border-radius: 14px;
+  padding: 0.9em 1.8em;
+  font-size: 1.42em;
+  font-weight: 600;
+  line-height: 1.2em;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 7px 80px -12px #050401, inset 0 0 rgba(19, 36, 54, 0),
+    inset 0 0 rgba(19, 36, 54, 0);
+}
+.button4:hover {
+  box-shadow: 0 0 0 -10px #015aff, inset -15px 13px 30px #191a1d,
+    inset 20px -55px 30px #191a1d;
+}
+.heading-13.mobile {
+  display: none;
+}
+@media screen and (max-width: 479px) {
+  .largeText.desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .largeText.mobile {
+    max-width: 80%;
+    margin-top: -13px;
+    line-height: 120%;
+    display: block;
+  }
+}
+@media screen and (max-width: 479px) {
+  .heading-13 {
     color: #fff;
-    text-align: center;
-    letter-spacing: 0.025em;
-    background-color: transparent;
-    background-image: linear-gradient(20deg, #6e5e19, #d5c345);
-    border-radius: 14px;
-    padding: 0.9em 1.8em;
-    font-family: Rohnrounded Bold, sans-serif;
-    font-size: 1.42em;
-    font-weight: 500;
-    line-height: 1.2em;
-    transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    box-shadow: 0 7px 80px -12px #050401, inset 0 0 rgba(19, 36, 54, 0),
-      inset 0 0 rgba(19, 36, 54, 0);
+    width: 100%;
+    margin-bottom: 0;
+    font-size: 55px;
+    line-height: 45px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .heading-13.desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .heading-13.mobile {
+    justify-content: center;
+    font-size: 42px;
+    line-height: 100%;
+    display: flex;
+  }
+}
+@media screen and (max-width: 479px) {
+  .button4 {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -141,14 +182,6 @@
     font-size: 12px;
     line-height: 20px;
     padding: 0px;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .desktop {
-    display: none;
   }
 
   .sectionHero {

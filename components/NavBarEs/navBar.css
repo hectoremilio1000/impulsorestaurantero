@@ -45,6 +45,7 @@
   text-transform: capitalize;
   cursor: pointer;
   transition: all 0.5s;
+  white-space: nowrap;
 }
 
 .header-icons {
