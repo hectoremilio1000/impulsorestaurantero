@@ -5,7 +5,6 @@
 const nextConfig = {
   output: "export",
   transpilePackages: [
-    // antd & dependencies
     "@ant-design",
     "@rc-component",
     "antd",
@@ -48,4 +47,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
