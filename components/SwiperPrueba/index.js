@@ -23,16 +23,16 @@ const MySwiper = () => {
           </h1>
 
           <div className={`${styles.largeText} ${styles.mobile}`}>
-            Obtener más clientes puede ser difícil. Nosotros lo hacemos fácil.
-            Accede a nuestra clase maestra GRATUITA "Llena tu gimnasio en 90
-            días" a continuación.
+            Conseguir más clientes puede ser difícil. Nosotros lo hacemos fácil.
+            Accede a nuestra master class GRATUITA "Llena tu restaurante en 90
+            días"
             <br />
           </div>
           <div className={`${styles.largeText} ${styles.desktop}`}>
-            Descarga el estudio de 33 restaurantes que están ARRASANDO en 2024 y{" "}
-            <br />
+            Descarga el estudio de 33 restaurantes que están TRIUNFANDO A LO
+            GRANDE en 2024 y <br />
             descubre los 7 Modelos de Éxito que siguieron para construir
-            restaurantes increíblemente lucrativos
+            Restaurantes con Ganancias Descomunales
             <br />
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>

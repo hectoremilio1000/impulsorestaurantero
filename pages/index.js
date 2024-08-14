@@ -146,15 +146,15 @@ export default function Home() {
                 >
                   <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
                     <span className="text-span-142">
-                      TWO DAYS TO CHANGE YOUR GYM FOREVER.
+                      DOS DÍAS PARA CAMBIAR TU RESTAURANTE PARA SIEMPRE
                     </span>{" "}
                     <br />
                     <span className="text-span-4 text-[#fff]">
-                      GYM GROWTH WORKSHOP - OCT 8-9TH
+                      TALLER EN LÍNEA
                     </span>
                     <br />
                     <span className="span4-tw">
-                      DON'T MISS OUT. FIRST 100 GYM OWNERS ONLY
+                      NO TE LO PIERDAS. PRIMEROS 15 DUEÑOS RESTAURANTEROS.
                     </span>
                   </h1>
                 </a>
@@ -167,12 +167,12 @@ export default function Home() {
                   data-cmp-ab="2"
                 >
                   <img
-                    src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png"
+                    src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png"
                     loading="lazy"
                     width="217"
                     sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
                     alt=""
-                    srcSet="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White-p-500.png 500w, https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png 770w"
+                    srcSet="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 500w, https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 770w"
                     className="image-8"
                     data-cmp-ab="2"
                     data-cmp-info="10"
