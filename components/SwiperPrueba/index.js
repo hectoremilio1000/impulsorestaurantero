@@ -37,9 +37,7 @@ const MySwiper = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "center" }}>
             <Link href="/reserva">
-              <button className="py-4 px-5 buttonComponente rounded mt-3 bg-gradient-to-r from-yellow-800 to-amber-300 text-transform: uppercase">
-                Si! Muéstrame!
-              </button>
+              <button className={styles.button4}>Si! Muéstrame!</button>
             </Link>
           </div>
         </div>
