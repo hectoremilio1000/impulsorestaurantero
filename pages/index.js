@@ -172,7 +172,7 @@ export default function Home() {
                     width="217"
                     sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
                     alt=""
-                    srcset="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White-p-500.png 500w, https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png 770w"
+                    srcSet="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White-p-500.png 500w, https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/668c3477cd0a26126b5e880d_Gym%20Growth%20Logo%20White.png 770w"
                     className="image-8"
                     data-cmp-ab="2"
                     data-cmp-info="10"
@@ -222,7 +222,7 @@ export default function Home() {
 
       <QuickInfo />
       <Slider />
-      <Calendario />
+
       {espa ? (
         <>
           <div className="overflow-hidden bg-black">
