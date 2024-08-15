@@ -3,13 +3,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap");
 
 /* estilos globales de fuentes */
+.title2-tw {
+  @apply text-[16px] md:text-[38px] leading-[120%] md:leading-[40px] font-[700];
+}
 .title3-tw {
-  @apply text-[14px] md:text-[35px] leading-[120%] md:leading-[40px] font-[600];
+  @apply text-[14px] md:text-[35px] leading-[120%] md:leading-[40px] font-[700];
 }
 .span4-tw {
   @apply text-[10px] md:text-[25px];
 }
-
+.button-small {
+  background-color: #a78b21;
+  box-shadow: 0 7px 80px -12px var(--gold), inset 0 0 0 0 #13243600,
+    inset 0 0 0 0 #13243600;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  background-image: none;
+  border-radius: 6px;
+  padding: 0.7em 1.6em;
+  font-family: Rohnrounded Bold, sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.2em;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.button-small:hover {
+  box-shadow: 0 0 0 -10px #015aff, inset -15px 13px 30px #191a1d,
+    inset 20px -55px 30px #191a1d;
+}
 /*Slider button*/
 .swiper-button-prev {
   color: #50eb91 !important;

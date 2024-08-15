@@ -19,6 +19,7 @@ import Link from "next/link";
 import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
 import MySwiper from "../components/SwiperPrueba";
+import CasosEstudio from "../components/CasosEstudio";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -131,90 +132,88 @@ export default function Home() {
       <NavBar />
       {espa ? (
         <>
-          <div>
-            <MySwiper />
-
-            <div
-              id="section-info-banner"
-              className="justify-center bg-black py-[11px] flex-col md:flex-row flex overflow-hidden items-center w-full"
-            >
-              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
-                <a
-                  href="http://ww2.gymlaunch.com/gymgrowth"
-                  target="_blank"
-                  className="inline-block"
-                >
-                  <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
-                    <span className="text-span-142">
-                      DOS DÍAS PARA CAMBIAR TU RESTAURANTE PARA SIEMPRE
-                    </span>{" "}
-                    <br />
-                    <span className="text-span-4 text-[#fff]">
-                      TALLER EN LÍNEA
-                    </span>
-                    <br />
-                    <span className="span4-tw">
-                      NO TE LO PIERDAS. PRIMEROS 15 DUEÑOS RESTAURANTEROS.
-                    </span>
-                  </h1>
-                </a>
-              </div>
-              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
-                <a
-                  href="http://ww2.gymlaunch.com/gymgrowth"
-                  target="_blank"
-                  className="inline-block"
-                  data-cmp-ab="2"
-                >
-                  <img
-                    src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png"
-                    loading="lazy"
-                    width="217"
-                    sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
-                    alt=""
-                    srcSet="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 500w, https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 770w"
-                    className="image-8"
-                    data-cmp-ab="2"
-                    data-cmp-info="10"
-                  />
-                </a>
-              </div>
+          <MySwiper />
+          <div
+            id="section-info-banner"
+            className="justify-center bg-black py-[11px] flex-col md:flex-row flex overflow-hidden items-center w-full"
+          >
+            <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+              <a
+                href="http://ww2.gymlaunch.com/gymgrowth"
+                target="_blank"
+                className="inline-block"
+              >
+                <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
+                  <span className="text-span-142">
+                    DOS DÍAS PARA CAMBIAR TU RESTAURANTE PARA SIEMPRE
+                  </span>{" "}
+                  <br />
+                  <span className="text-span-4 text-[#fff]">
+                    TALLER EN LÍNEA
+                  </span>
+                  <br />
+                  <span className="span4-tw">
+                    NO TE LO PIERDAS. PRIMEROS 15 DUEÑOS RESTAURANTEROS.
+                  </span>
+                </h1>
+              </a>
             </div>
-            <div id="section-clientes" className="bg-white overflow-hidden">
-              <div className="max-w-[95%] mx-auto bg-black rounded-b-[25px] flex items-center pt-[13px] pb-[18px] px-[30px]">
-                <div className="flex w-[90%] gap-[20px]">
-                  <div
-                    id="block-clientes"
-                    className="overflow-hidden flex items-center relative justify-start"
-                  >
-                    <div className="gradiente"></div>
-                    <div className="clientes flex">
-                      <img
-                        src="https://logo.clearbit.com/yahoo.com"
-                        alt="Yahoo Finance"
-                        className="h-8 md:h-10"
-                      />
-                      <img
-                        src="https://logo.clearbit.com/entrepreneur.com"
-                        alt="Entrepreneur"
-                        className="h-8 md:h-10"
-                      />
-                      <img
-                        src="https://logo.clearbit.com/muscleandfitness.com"
-                        alt="Muscle & Fitness"
-                        className="h-8 md:h-10"
-                      />
-                      <img
-                        src="https://logo.clearbit.com/facebook.com"
-                        alt="Facebook"
-                        className="h-8 md:h-10"
-                      />
-                    </div>
+            <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+              <a
+                href="http://ww2.gymlaunch.com/gymgrowth"
+                target="_blank"
+                className="inline-block"
+                data-cmp-ab="2"
+              >
+                <img
+                  src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png"
+                  loading="lazy"
+                  width="217"
+                  sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
+                  alt=""
+                  srcSet="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 500w, https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 770w"
+                  className="image-8"
+                  data-cmp-ab="2"
+                  data-cmp-info="10"
+                />
+              </a>
+            </div>
+          </div>
+          <div id="section-clientes" className="bg-white overflow-hidden">
+            <div className="max-w-[95%] mx-auto bg-black rounded-b-[25px] flex items-center pt-[13px] pb-[18px] px-[30px]">
+              <div className="flex w-[90%] gap-[20px]">
+                <div
+                  id="block-clientes"
+                  className="overflow-hidden flex items-center relative justify-start"
+                >
+                  <div className="gradiente"></div>
+                  <div className="clientes flex">
+                    <img
+                      src="https://logo.clearbit.com/yahoo.com"
+                      alt="Yahoo Finance"
+                      className="h-8 md:h-10"
+                    />
+                    <img
+                      src="https://logo.clearbit.com/entrepreneur.com"
+                      alt="Entrepreneur"
+                      className="h-8 md:h-10"
+                    />
+                    <img
+                      src="https://logo.clearbit.com/muscleandfitness.com"
+                      alt="Muscle & Fitness"
+                      className="h-8 md:h-10"
+                    />
+                    <img
+                      src="https://logo.clearbit.com/facebook.com"
+                      alt="Facebook"
+                      className="h-8 md:h-10"
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <CasosEstudio />
         </>
       ) : (
         <></>
