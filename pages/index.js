@@ -218,7 +218,7 @@ export default function Home() {
           </div>
           <CasosEstudio />
           <About />
-          <div className="flex flex-col items-center justify-center py-5 px-2">
+          <div className="flex flex-col items-center justify-center py-16 px-2">
             <div className="heading-block flex flex-col justify-center items-center mb-16">
               <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
                 #GYMOWNERSRULE
@@ -227,6 +227,237 @@ export default function Home() {
                 READY TO START GETTING <br /> A torrential DOWNPOUR <br /> OF
                 NEW MEMBERS?
               </h2>
+            </div>
+            <div className="max-w-[1085px] mx-auto w-full">
+              <div className="grid gap-16 w-full">
+                <div className="w-full md:col-span-2 relative">
+                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
+                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
+                      <div className="content-text flex flex-col justify-center items-start gap-6">
+                        <h2 className="title3-tw uppercase">
+                          How to start a gym series
+                        </h2>
+                        <p className="max-w-[24.5em] parrafo-tw">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Inventore in minus ipsa nulla quia similique
+                          praesentium nesciunt nemo. Provident optio eius beatae
+                          harum neque reiciendis et ducimus labore, quaerat
+                          quas.
+                        </p>
+                        <button className="button-small font-bold">
+                          WATCH NOW
+                        </button>
+                      </div>
+                      <img
+                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
+                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:col-span-2 relative">
+                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
+                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
+                      <div className="content-text flex flex-col justify-center items-start gap-6">
+                        <h2 className="title3-tw uppercase">7 Money Models</h2>
+                        <p className="max-w-[24.5em] parrafo-tw">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Inventore in minus ipsa nulla quia similique
+                          praesentium nesciunt nemo. Provident optio eius beatae
+                          harum neque reiciendis et ducimus labore, quaerat
+                          quas.
+                        </p>
+                        <button className="button-small font-bold">
+                          DOWNLOAD NOW
+                        </button>
+                      </div>
+                      <img
+                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
+                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:col-span-2 relative">
+                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
+                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
+                      <div className="content-text flex flex-col justify-center items-start gap-6">
+                        <h2 className="title3-tw uppercase">
+                          30-MINUTE GYM ADS
+                        </h2>
+                        <p className="max-w-[24.5em] parrafo-tw">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Inventore in minus ipsa nulla quia similique
+                          praesentium nesciunt nemo. Provident optio eius beatae
+                          harum neque reiciendis et ducimus labore, quaerat
+                          quas.
+                        </p>
+                        <button className="button-small font-bold">
+                          ACCESS NOW
+                        </button>
+                      </div>
+                      <img
+                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
+                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:col-span-2 relative">
+                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
+                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
+                      <div className="content-text flex flex-col justify-center items-start gap-6">
+                        <h2 className="title3-tw uppercase">
+                          GYM LAUNCH SECRETS
+                        </h2>
+                        <p className="max-w-[24.5em] parrafo-tw">
+                          Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Inventore in minus ipsa nulla quia similique
+                          praesentium nesciunt nemo. Provident optio eius beatae
+                          harum neque reiciendis et ducimus labore, quaerat
+                          quas.
+                        </p>
+                        <button className="button-small font-bold">
+                          CLAIM MY BOOK
+                        </button>
+                      </div>
+                      <img
+                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
+                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              backgroundImage:
+                "url('https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e70098b6df3b5c44eb2d7a_Real_Gym_Owners.webp')",
+              backgroundPosition: "50%",
+              backgroundSize: "auto",
+            }}
+            className="px-8 flex flex-col items-center justify-center md:pt-[240px] pb-[58px] md:pb-[126px] px-2"
+          >
+            <div className="max-w-[500px] mx-auto heading-block flex flex-col justify-center items-center mb-16">
+              <img
+                className="flex md:hidden"
+                src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/63e7ec27bc6a9ab674a69fa1_Mobile_Gym_Owners.webp"
+                loading="lazy"
+                alt=""
+              />
+              <h2 className="title2-tw text-center uppercase mb-4">
+                REAL RESULTS <br /> FROM REAL <br /> GYM OWNERS
+              </h2>
+              <p className="parrafo-tw text-center mb-4">
+                Gym Launch has helped 5,000+ Gym Owners build wildly profitable
+                gyms, The only question is, will yours be next?
+              </p>
+              <button className="button4 font-bold">LEARN HOW WE DO IT</button>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center py-16 px-2">
+            <div className="heading-block flex flex-col justify-center items-center mb-16">
+              <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
+                THE TOP 1%
+              </span>
+              <h2 className="title2-tw text-center uppercase">
+                6 REASONS WHY <br />
+                GYM LORDS ARE SUCCESSFUL
+              </h2>
+            </div>
+            <div className="max-w-[1050px] mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    1
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    2
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    3
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    4
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    5
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                  <span className="inline-block p-4 rounded text-white bg-principal">
+                    6
+                  </span>
+                  <h1 className="text-[12px] md:text-[18px] font-bold">
+                    Masters of Action
+                  </h1>
+                  <p className="parrafo-tw">
+                    Gym Lords know that not making a decision is a decision.
+                    They take immediate action on their goals. They know that an
+                    imperfect plan executed today is better than a perfect plan
+                    executed next week.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </>

@@ -24,6 +24,25 @@
 .span4-tw {
   @apply text-[14px] md:text-[25px];
 }
+.button4 {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.025em;
+  background-color: transparent;
+  background-image: linear-gradient(20deg, #6e5e19, #d5c345);
+  border-radius: 14px;
+  padding: 0.9em 1.8em;
+  font-size: 1.42em;
+  font-weight: 600;
+  line-height: 1.2em;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 7px 80px -12px #050401, inset 0 0 rgba(19, 36, 54, 0),
+    inset 0 0 rgba(19, 36, 54, 0);
+}
+.button4:hover {
+  box-shadow: 0 0 0 -10px #015aff, inset -15px 13px 30px #191a1d,
+    inset 20px -55px 30px #191a1d;
+}
 .button-small {
   background-color: #a78b21;
   box-shadow: 0 7px 80px -12px var(--gold), inset 0 0 0 0 #13243600,
