@@ -20,6 +20,7 @@ import NavBar from "../components/NavBarEs/NavBarEs";
 import QuickInfo5 from "../components/QuickInfo5";
 import MySwiper from "../components/SwiperPrueba";
 import CasosEstudio from "../components/CasosEstudio";
+import About from "../components/About";
 // imagenes
 const image1 =
   "https://imagenesrutalab.s3.amazonaws.com/llorona/nextImage/IMG_9585.jpg";
@@ -135,52 +136,54 @@ export default function Home() {
           <MySwiper />
           <div
             id="section-info-banner"
-            className="justify-center bg-black py-[11px] flex-col md:flex-row flex overflow-hidden items-center w-full"
+            className="justify-center bg-black py-[11px]  w-full"
           >
-            <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
-              <a
-                href="http://ww2.gymlaunch.com/gymgrowth"
-                target="_blank"
-                className="inline-block"
-              >
-                <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
-                  <span className="text-span-142">
-                    DOS DÍAS PARA CAMBIAR TU RESTAURANTE PARA SIEMPRE
-                  </span>{" "}
-                  <br />
-                  <span className="text-span-4 text-[#fff]">
-                    TALLER EN LÍNEA
-                  </span>
-                  <br />
-                  <span className="span4-tw">
-                    NO TE LO PIERDAS. PRIMEROS 15 DUEÑOS RESTAURANTEROS.
-                  </span>
-                </h1>
-              </a>
-            </div>
-            <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
-              <a
-                href="http://ww2.gymlaunch.com/gymgrowth"
-                target="_blank"
-                className="inline-block"
-                data-cmp-ab="2"
-              >
-                <img
-                  src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png"
-                  loading="lazy"
-                  width="217"
-                  sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
-                  alt=""
-                  srcSet="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 500w, https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 770w"
-                  className="image-8"
+            <div className="max-w-[90%] mx-auto flex-col md:flex-row flex overflow-hidden items-center">
+              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+                <a
+                  href="http://ww2.gymlaunch.com/gymgrowth"
+                  target="_blank"
+                  className="inline-block"
+                >
+                  <h1 className="title3-tw text-principal mt-[4px] text-center md:text-start">
+                    <span className="title3-tw">
+                      DOS DÍAS PARA CAMBIAR TU RESTAURANTE PARA SIEMPRE
+                    </span>{" "}
+                    <br />
+                    <span className="title3-tw text-[#fff]">
+                      TALLER EN LÍNEA
+                    </span>
+                    <br />
+                    <span className="span4-tw">
+                      NO TE LO PIERDAS. PRIMEROS 15 DUEÑOS RESTAURANTEROS.
+                    </span>
+                  </h1>
+                </a>
+              </div>
+              <div className="justify-center max-w-[100%] md:justify-start flex self-center items-center mx-auto">
+                <a
+                  href="http://ww2.gymlaunch.com/gymgrowth"
+                  target="_blank"
+                  className="inline-block"
                   data-cmp-ab="2"
-                  data-cmp-info="10"
-                />
-              </a>
+                >
+                  <img
+                    src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png"
+                    loading="lazy"
+                    width="217"
+                    sizes="(max-width: 479px) 217px, (max-width: 991px) 26vw, (max-width: 1439px) 21vw, 217px"
+                    alt=""
+                    srcSet="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 500w, https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/banner/logoPalabrasFinalImpulsoTALLER.png 770w"
+                    className="image-8"
+                    data-cmp-ab="2"
+                    data-cmp-info="10"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div id="section-clientes" className="bg-white overflow-hidden">
-            <div className="max-w-[95%] mx-auto bg-black rounded-b-[25px] flex items-center pt-[13px] pb-[18px] px-[30px]">
+            <div className="max-w-[90%] mx-auto bg-black rounded-b-[25px] flex items-center pt-[13px] pb-[18px] px-[30px]">
               <div className="flex w-[90%] gap-[20px]">
                 <div
                   id="block-clientes"
@@ -214,49 +217,22 @@ export default function Home() {
             </div>
           </div>
           <CasosEstudio />
+          <About />
+          <div className="flex flex-col items-center justify-center py-5 px-2">
+            <div className="heading-block flex flex-col justify-center items-center mb-16">
+              <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
+                #GYMOWNERSRULE
+              </span>
+              <h2 className="title2-tw text-center uppercase">
+                READY TO START GETTING <br /> A torrential DOWNPOUR <br /> OF
+                NEW MEMBERS?
+              </h2>
+            </div>
+          </div>
         </>
       ) : (
         <></>
       )}
-
-      <QuickInfo />
-      <Slider />
-
-      {espa ? (
-        <>
-          <div className="overflow-hidden bg-black">
-            <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                TESTIMONIO
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                TESTIMONIO
-              </h1>
-            </div>
-          </div>
-          <div className="bg-black py-[50px]">
-            <QuickInfo5 idioma={espa} />
-          </div>
-        </>
-      ) : (
-        <>
-          <div className="overflow-hidden bg-black">
-            <div className="flex items-center gap-4 whitespace-nowrap">
-              <h1 className="inline-block animate-marqueeleft text-white text-[70px] md:text-[100px] font-bold  w-full">
-                TESTIMONIALS
-              </h1>
-              <h1 className="animate-marqueeleft inline-block text-[#3eeb91] text-[70px] md:text-[100px] font-bold  ">
-                TESTIMONIALS
-              </h1>
-            </div>
-          </div>
-          <div className="bg-black py-[50px]">
-            <QuickInfo5 idioma={espa} />
-          </div>
-        </>
-      )}
-      {/* <QuickInfo4 /> */}
-      <Encontramos />
     </div>
   );
 }

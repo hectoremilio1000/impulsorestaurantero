@@ -3,14 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap");
 
 /* estilos globales de fuentes */
+.titlebanner-tw {
+  @apply text-[28px] md:text-[55px] leading-[120%] md:leading-[40px] font-[900];
+}
+.title1-tw {
+  @apply text-[22px] md:text-[58px] leading-[120%] md:leading-[40px] font-bold;
+}
 .title2-tw {
-  @apply text-[16px] md:text-[38px] leading-[120%] md:leading-[40px] font-[700];
+  @apply text-[23px] md:text-[50px] leading-[130%] md:leading-[55px] font-bold;
 }
 .title3-tw {
-  @apply text-[14px] md:text-[35px] leading-[120%] md:leading-[40px] font-[700];
+  @apply text-[18px] md:text-[35px] leading-[120%] md:leading-[32px] font-bold;
+}
+.title4-tw {
+  @apply text-[12px] md:text-[18px] leading-[120%] md:leading-[40px] font-normal;
+}
+.parrafo-tw {
+  @apply text-[12px] md:text-[16px] leading-[120%] md:leading-[16px] font-normal;
 }
 .span4-tw {
-  @apply text-[10px] md:text-[25px];
+  @apply text-[14px] md:text-[25px];
 }
 .button-small {
   background-color: #a78b21;

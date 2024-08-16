@@ -24,6 +24,7 @@ module.exports = {
     extend: {
       colors: {
         principal: "#a78b21", // Reemplaza '#ffd700' con el código hexadecimal de tu color dorado
+        secundario: "#b8a1482e", // Reemplaza '#ffd700' con el código hexadecimal de tu color dorado
       },
     },
   },
