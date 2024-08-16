@@ -447,6 +447,15 @@ background-repeat: no-repeat;
 }
 
 /*secciones*/
+
+.paragraph-feature {
+  flex: 0 auto;
+  max-width: 24.5em;
+  margin-bottom: 0;
+  line-height: 115%;
+  color: black;
+}
+
 .tituloSection {
   letter-spacing: 0.3rem;
   font-size: 2rem;
