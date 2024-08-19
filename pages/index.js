@@ -221,11 +221,12 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center py-16 px-2">
             <div className="heading-block flex flex-col justify-center items-center mb-16">
               <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
-                #GYMOWNERSRULE
+                #RESTAURANTEROSEXITOSOS
               </span>
               <h2 className="title2-tw text-center uppercase">
-                READY TO START GETTING <br /> A torrential DOWNPOUR <br /> OF
-                NEW MEMBERS?
+                ¿Listo para empezar a recibir <br />
+                a millones <br />
+                de nuevos clientes?
               </h2>
             </div>
             <div className="max-w-[1085px] mx-auto w-full">
@@ -235,41 +236,18 @@ export default function Home() {
                     <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
                       <div className="content-text flex flex-col justify-center items-start gap-6">
                         <h2 className="title3-tw uppercase">
-                          How to start a gym series
+                          Cómo Iniciar un Restaurante
                         </h2>
-                        <p className="max-w-[24.5em] parrafo-tw">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Inventore in minus ipsa nulla quia similique
-                          praesentium nesciunt nemo. Provident optio eius beatae
-                          harum neque reiciendis et ducimus labore, quaerat
-                          quas.
+                        <p className="max-w-[24.5em] parrafo-tw paragraph-feature">
+                          Es tu guía esencial para convertirte en dueño de un
+                          restaurante exitoso. Desde la elección del tipo de
+                          restaurante y ubicación hasta comprender las
+                          complejidades de los arrendamientos. Además, descubre
+                          cómo evitar los errores comunes que pueden afectar tu
+                          emprendimiento gastronómico.
                         </p>
                         <button className="button-small font-bold">
-                          WATCH NOW
-                        </button>
-                      </div>
-                      <img
-                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
-                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full md:col-span-2 relative">
-                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
-                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
-                      <div className="content-text flex flex-col justify-center items-start gap-6">
-                        <h2 className="title3-tw uppercase">7 Money Models</h2>
-                        <p className="max-w-[24.5em] parrafo-tw">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Inventore in minus ipsa nulla quia similique
-                          praesentium nesciunt nemo. Provident optio eius beatae
-                          harum neque reiciendis et ducimus labore, quaerat
-                          quas.
-                        </p>
-                        <button className="button-small font-bold">
-                          DOWNLOAD NOW
+                          LEER AHORA
                         </button>
                       </div>
                       <img
@@ -285,17 +263,16 @@ export default function Home() {
                     <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
                       <div className="content-text flex flex-col justify-center items-start gap-6">
                         <h2 className="title3-tw uppercase">
-                          30-MINUTE GYM ADS
+                          7 Modelos de Ingresos para Restaurantes
                         </h2>
-                        <p className="max-w-[24.5em] parrafo-tw">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Inventore in minus ipsa nulla quia similique
-                          praesentium nesciunt nemo. Provident optio eius beatae
-                          harum neque reiciendis et ducimus labore, quaerat
-                          quas.
+                        <p className="max-w-[24.5em] parrafo-tw paragraph-feature">
+                          ¿Quieres hacer crecer tu restaurante o bar y generar
+                          más de $100,000 al mes? Descarga nuestro PDF gratuito
+                          con los 7 Modelos de Ingresos y accede a una
+                          capacitación en video aquí.
                         </p>
                         <button className="button-small font-bold">
-                          ACCESS NOW
+                          VER AHORA
                         </button>
                       </div>
                       <img
@@ -311,17 +288,40 @@ export default function Home() {
                     <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
                       <div className="content-text flex flex-col justify-center items-start gap-6">
                         <h2 className="title3-tw uppercase">
-                          GYM LAUNCH SECRETS
+                          ANUNCIOS DE 30 MINUTOS PARA RESTAURANTES
                         </h2>
-                        <p className="max-w-[24.5em] parrafo-tw">
-                          Lorem, ipsum dolor sit amet consectetur adipisicing
-                          elit. Inventore in minus ipsa nulla quia similique
-                          praesentium nesciunt nemo. Provident optio eius beatae
-                          harum neque reiciendis et ducimus labore, quaerat
-                          quas.
+                        <p className="max-w-[24.5em] parrafo-tw paragraph-feature">
+                          Los dueños de restaurantes consiguen 20-30 nuevos
+                          clientes al mes con este plan de anuncios en Facebook
+                          "listo para usar".
                         </p>
                         <button className="button-small font-bold">
-                          CLAIM MY BOOK
+                          PROBAR AHORA
+                        </button>
+                      </div>
+                      <img
+                        className="rounded-[1.2em] w-[80%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
+                        src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/646e4a6b854fc904b849c6cb_Gymlord.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="w-full md:col-span-2 relative">
+                  <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
+                    <div className="w-full relative py-24 px-16 flex items-start justify-start flex-col overflow-hidden perspective">
+                      <div className="content-text flex flex-col justify-center items-start gap-6">
+                        <h2 className="title3-tw uppercase">
+                          SECRETOS DE IMPULSO RESTAURANTERO
+                        </h2>
+                        <p className="max-w-[24.5em] parrafo-tw">
+                          La guía paso a paso para que los dueños de
+                          restaurantes aprendan a llegar a más clientes,
+                          transformar más vidas y construir negocios sumamente
+                          rentables.
+                        </p>
+                        <button className="button-small font-bold">
+                          SOLICITAR AHORA
                         </button>
                       </div>
                       <img
@@ -352,23 +352,26 @@ export default function Home() {
                 alt=""
               />
               <h2 className="title2-tw text-center uppercase mb-4">
-                REAL RESULTS <br /> FROM REAL <br /> GYM OWNERS
+                RESULTADOS REALES <br /> DE DUEÑOS DE <br /> RESTAURANTES REALES
               </h2>
-              <p className="parrafo-tw text-center mb-4">
-                Gym Launch has helped 5,000+ Gym Owners build wildly profitable
-                gyms, The only question is, will yours be next?
+              <p className="parrafo-tw text-center mb-4 paragraph cn">
+                Impulso Restaurantero ha ayudado a más de 5,000 dueños de
+                restaurantes a construir negocios sumamente rentables. La única
+                pregunta es, ¿será el tuyo el próximo?
               </p>
-              <button className="button4 font-bold">LEARN HOW WE DO IT</button>
+              <button className="button4 font-bold">
+                DESCUBRE CÓMO LO HACEMOS
+              </button>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center py-16 px-2">
             <div className="heading-block flex flex-col justify-center items-center mb-16">
               <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
-                THE TOP 1%
+                EL 1% MÁS EXCLUSIVO
               </span>
               <h2 className="title2-tw text-center uppercase">
-                6 REASONS WHY <br />
-                GYM LORDS ARE SUCCESSFUL
+                6 RAZONES POR QUÉ <br />
+                NUESTROS RESTAURANTEROS TRIUNFAN
               </h2>
             </div>
             <div className="max-w-[1050px] mx-auto">
@@ -377,14 +380,14 @@ export default function Home() {
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     1
                   </span>
-                  <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
-                  </h1>
+                  <h5 className="text-[12px] md:text-[18px] font-bold">
+                    Maestros de la Ejecución
+                  </h5>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    Los dueños exitosos de restaurantes saben que no tomar una
+                    decisión también es una decisión. Actúan de inmediato sobre
+                    sus objetivos. Saben que un plan imperfecto ejecutado hoy es
+                    mejor que un plan perfecto ejecutado la próxima semana.
                   </p>
                 </div>
                 <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
@@ -392,13 +395,12 @@ export default function Home() {
                     2
                   </span>
                   <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
+                    El Héroe de Su Propia Historia
                   </h1>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    Saben que nadie vendrá a salvarlos y que su destino está en
+                    sus propias manos. Asumen total responsabilidad en definir
+                    sus valores, reconocer sus debilidades y superar obstáculos.
                   </p>
                 </div>
                 <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
@@ -406,13 +408,12 @@ export default function Home() {
                     3
                   </span>
                   <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
+                    Dedicados a Servir a Su Comunidad
                   </h1>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    En el fondo, están en este negocio para cambiar vidas,
+                    ayudar a las personas y ser maestros de la transformación.
+                    El éxito de sus clientes es también su propio éxito.
                   </p>
                 </div>
                 <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
@@ -420,13 +421,14 @@ export default function Home() {
                     4
                   </span>
                   <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
+                    Aprendices de por Vida
                   </h1>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    No hay espacio para el ego en el camino de un restaurantero
+                    exitoso. Para mantenerse al día con las tendencias y mejores
+                    prácticas de la industria, están en constante crecimiento,
+                    aceptan retroalimentación y confían en sus mentores, tal
+                    como sus clientes confían en ellos.
                   </p>
                 </div>
                 <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
@@ -434,13 +436,13 @@ export default function Home() {
                     5
                   </span>
                   <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
+                    Amantes del Crecimiento
                   </h1>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    Los dueños exitosos de restaurantes están orgullosos pero
+                    nunca satisfechos. Cuando alcanzan una meta, ya están
+                    mirando hacia el siguiente objetivo. Siempre tienen la mira
+                    puesta en el próximo nivel.
                   </p>
                 </div>
                 <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
@@ -448,13 +450,13 @@ export default function Home() {
                     6
                   </span>
                   <h1 className="text-[12px] md:text-[18px] font-bold">
-                    Masters of Action
+                    Expertos Comunicadores
                   </h1>
                   <p className="parrafo-tw">
-                    Gym Lords know that not making a decision is a decision.
-                    They take immediate action on their goals. They know that an
-                    imperfect plan executed today is better than a perfect plan
-                    executed next week.
+                    Las conversaciones difíciles son algo natural para los
+                    restauranteros exitosos. Dicen lo que se necesita decir sin
+                    endulzarlo. Saben que guardar comentarios valiosos para sí
+                    mismos perjudica a todos.
                   </p>
                 </div>
               </div>

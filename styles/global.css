@@ -481,6 +481,42 @@ background-repeat: no-repeat;
   color: #3eeb91;
   text-align: center !important;
 }
+.text-block-6 {
+  color: #a78b21;
+  text-align: center;
+  margin-top: -12px;
+  font-size: 14px;
+}
+.paragraph {
+  color: var(--dark);
+  text-align: left;
+  letter-spacing: 1px;
+  text-indent: 0;
+  column-count: 1;
+  column-rule-width: 0px;
+  white-space: normal;
+  column-gap: 0;
+  margin-top: 4px;
+  font-family: Rohnrounded Regular, sans-serif;
+  font-size: 17px;
+}
+.paragraph.cn {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.counter {
+  color: #a78b21;
+  text-align: center;
+  margin-top: -19px;
+  padding-top: 0;
+  font-family: Rohnrounded Bold, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+}
 
 .subTituloSection {
   letter-spacing: 0.3rem;
