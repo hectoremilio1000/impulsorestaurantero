@@ -1,6 +1,27 @@
 import React from "react";
-
+import { motion, useMotionValue, useTransform } from "framer-motion";
 const CasosEstudio = () => {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  // Ajustes para la rotación basados en la posición del mouse
+  const rotateX = useTransform(y, [-50, 50], [10, -10]);
+  const rotateY = useTransform(x, [-50, 50], [-15, 15]);
+  const rotateZ = useTransform(x, [-50, 50], [-10, 10]);
+
+  // Ajustes para la traslación y el escalado
+  const translateX = useTransform(x, [-50, 50], [-3, 3]);
+  const translateY = useTransform(y, [-50, 50], [-2, 2]);
+  const scale = useTransform(x, [-50, 50], [1, 1.05]);
+
+  const handleMouseMove = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const mouseX = event.clientX - rect.left - rect.width / 2;
+    const mouseY = event.clientY - rect.top - rect.height / 2;
+
+    x.set(mouseX / 10); // Ajusta el divisor para controlar la sensibilidad
+    y.set(mouseY / 10);
+  };
   return (
     <div className="flex flex-col items-center justify-center py-5 px-2">
       <div className="heading-block flex flex-col justify-center items-center mb-16">
@@ -42,7 +63,10 @@ const CasosEstudio = () => {
             </p>
             <button className="button-small">VER CLIENTES EXITÓSOS</button>
           </div>
-          <div className="w-full md:col-span-2 relative">
+          <div
+            className="w-full md:col-span-2 relative"
+            onMouseMove={handleMouseMove}
+          >
             <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
               <div className="w-full relative p-8 md:p-16 flex items-start justify-start flex-col overflow-hidden perspective">
                 <div className="z-20 relative content-text flex flex-col justify-center items-start gap-6">
@@ -57,7 +81,16 @@ const CasosEstudio = () => {
                   </p>
                   <button className="button-small">VER CASOS DE ESTUDIO</button>
                 </div>
-                <img
+                <motion.img
+                  style={{
+                    transformStyle: "preserve-3d",
+                    translateX: translateX,
+                    translateY: translateY,
+                    scale: scale,
+                    rotateX: rotateX,
+                    rotateY: rotateY,
+                    rotateZ: rotateZ,
+                  }}
                   className="z-10 rounded-[1.2em] w-[70%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
                   src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/seccion1/group-friends-eating-restaurant_23-2148006617.jpg"
                   alt=""

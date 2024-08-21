@@ -373,7 +373,7 @@ export default function Home() {
             </div>
             <div className="max-w-[1050px] mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     1
                   </span>
@@ -387,7 +387,7 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     2
                   </span>
@@ -401,7 +401,7 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     3
                   </span>
@@ -415,7 +415,7 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     4
                   </span>
@@ -429,7 +429,7 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     5
                   </span>
@@ -443,7 +443,7 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
-                <div className="bg-gray-100 flex flex-col gap-3 items-start p-2 md:p-8">
+                <div className="bg-gray-100 flex flex-col gap-3 items-start p-6 md:p-8">
                   <span className="inline-block p-4 rounded text-white bg-principal">
                     6
                   </span>
@@ -457,6 +457,28 @@ export default function Home() {
                     executed next week.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center justify-center py-16 px-2 w-full">
+            <div className="max-w-[1050px] mx-auto bg-black w-full rounded-3xl py-8 overflow-hidden">
+              <div className="heading-block w-full flex flex-col justify-center items-center mb-16">
+                <span className="rounded-full bg-secundario text-white font-semibold px-4 py-2 mb-4">
+                  FREE DOWNLOAD
+                </span>
+                <h2 className="title3-tw text-center uppercase text-white">
+                  7 MONEY MODELS WE USE <br />
+                  TO SCALE GYMS PAST <br />
+                  $100K/MO LIKE CLOCKWORK
+                </h2>
+                <p className="my-4 text-white">
+                  Get the BEST models for building a wildly profitable gym in
+                  2024, <br /> plus 33 case studies of gyms that scaled using
+                  them.
+                </p>
+                <button className="button4 font-bold">
+                  YES! GET INSTANT ACCESS
+                </button>
               </div>
             </div>
           </div>
