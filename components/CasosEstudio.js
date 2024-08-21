@@ -26,7 +26,7 @@ const CasosEstudio = () => {
     <div className="flex flex-col items-center justify-center py-5 px-2">
       <div className="heading-block flex flex-col justify-center items-center mb-16">
         <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
-          #RESTAURANTEROSALMANDO
+          #RESTAURANTEROSEXITOSOS
         </span>
         <h2 className="title2-tw text-center uppercase">
           Con la confianza de más de
@@ -42,7 +42,7 @@ const CasosEstudio = () => {
               alt=""
             />
             <h2 className="title3-tw">Historias Inspiradoras</h2>
-            <p className="parrafo-tw">
+            <p className="parrafo-tw paragraph-feature">
               Inspírate con una colección de historias inspiradoras sobre
               restauranteros que superaron desafíos únicos y obstáculos para
               construir restaurantes generadores de dinero.
@@ -56,7 +56,7 @@ const CasosEstudio = () => {
               alt=""
             />
             <h2 className="title3-tw">Historias Inspiradoras</h2>
-            <p className="parrafo-tw">
+            <p className="parrafo-tw paragraph-feature">
               Explora nuestra colección en constante actualización de
               restauranteros celebrando desde pequeños logros hasta ganancias
               extraordinarias.
@@ -71,10 +71,11 @@ const CasosEstudio = () => {
               <div className="w-full relative p-8 md:p-16 flex items-start justify-start flex-col overflow-hidden perspective">
                 <div className="z-20 relative content-text flex flex-col justify-center items-start gap-6">
                   <h2 className="title3-tw">
-                    Impulso Restaurantero AYUDA <br /> A Construir Un Nuevo
+                    Impulso Restaurantero AYUDA <br /> A Construir Un Nuevo{" "}
+                    <br />
                     Restaurante de 7 Cifras <br /> Cada 21 Días
                   </h2>
-                  <p className="max-w-[24.5em] parrafo-tw">
+                  <p className="max-w-[24.5em] parrafo-tw paragraph-feature">
                     Descubre lo que otros restauranteros alrededor del mundo
                     tienen que decir sobre trabajar con Impulso Restaurantero y
                     los resultados que han logrado en el camino.
