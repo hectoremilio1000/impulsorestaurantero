@@ -1,27 +1,53 @@
-import React from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import React, { useEffect } from "react";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 const CasosEstudio = () => {
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
 
-  // Ajustes para la rotación basados en la posición del mouse
-  const rotateX = useTransform(y, [-50, 50], [10, -10]);
-  const rotateY = useTransform(x, [-50, 50], [-15, 15]);
-  const rotateZ = useTransform(x, [-50, 50], [-10, 10]);
+  // Transformaciones básicas basadas en la posición del mouse
+  const rotateX = useTransform(mouseY, [0, window.innerHeight], [10, -10]);
+  const rotateY = useTransform(mouseX, [0, window.innerWidth], [-10, 10]);
+  const translateX = useTransform(mouseX, [0, window.innerWidth], [-3, 3]);
+  const translateY = useTransform(mouseY, [0, window.innerHeight], [-2, 2]);
 
-  // Ajustes para la traslación y el escalado
-  const translateX = useTransform(x, [-50, 50], [-3, 3]);
-  const translateY = useTransform(y, [-50, 50], [-2, 2]);
-  const scale = useTransform(x, [-50, 50], [1, 1.05]);
+  // Aplicación de springs para suavizar las animaciones
+  const springRotateX = useSpring(rotateX, {
+    stiffness: 100,
+    damping: 20,
+    mass: 0.5,
+  });
 
-  const handleMouseMove = (event) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const mouseX = event.clientX - rect.left - rect.width / 2;
-    const mouseY = event.clientY - rect.top - rect.height / 2;
+  const springRotateY = useSpring(rotateY, {
+    stiffness: 100,
+    damping: 20,
+    mass: 0.5,
+  });
 
-    x.set(mouseX / 10); // Ajusta el divisor para controlar la sensibilidad
-    y.set(mouseY / 10);
+  const springTranslateX = useSpring(translateX, {
+    stiffness: 100,
+    damping: 20,
+    mass: 0.5,
+  });
+
+  const springTranslateY = useSpring(translateY, {
+    stiffness: 100,
+    damping: 20,
+    mass: 0.5,
+  });
+
+  // Manejador para actualizar las posiciones del mouse
+  const handleMouseMove = (e) => {
+    mouseX.set(e.clientX);
+    mouseY.set(e.clientY);
   };
+
+  // Agregar el evento de mousemove al cargar el componente
+  useEffect(() => {
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center py-5 px-2">
       <div className="heading-block flex flex-col justify-center items-center mb-16">
@@ -84,13 +110,11 @@ const CasosEstudio = () => {
                 </div>
                 <motion.img
                   style={{
+                    translateX: springTranslateX,
+                    translateY: springTranslateY,
+                    rotateX: springRotateX,
+                    rotateY: springRotateY,
                     transformStyle: "preserve-3d",
-                    translateX: translateX,
-                    translateY: translateY,
-                    scale: scale,
-                    rotateX: rotateX,
-                    rotateY: rotateY,
-                    rotateZ: rotateZ,
                   }}
                   className="z-10 rounded-[1.2em] w-[70%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
                   src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/seccion1/group-friends-eating-restaurant_23-2148006617.jpg"
