@@ -1,63 +1,96 @@
-import React, { useEffect } from "react";
-import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import {
+  motion,
+  useMotionValue,
+  useSpring,
+  useMotionTemplate,
+} from "framer-motion";
 const CasosEstudio = () => {
-  const mouseX = useMotionValue(0);
-  const mouseY = useMotionValue(0);
+  const ref = useRef(null);
 
-  // Transformaciones básicas basadas en la posición del mouse
-  const rotateX = useTransform(mouseY, [0, window.innerHeight], [10, -10]);
-  const rotateY = useTransform(mouseX, [0, window.innerWidth], [-10, 10]);
-  const translateX = useTransform(mouseX, [0, window.innerWidth], [-3, 3]);
-  const translateY = useTransform(mouseY, [0, window.innerHeight], [-2, 2]);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const z = useMotionValue(0);
+  const translateY = useMotionValue(0);
+  const translateX = useMotionValue(0);
 
-  // Aplicación de springs para suavizar las animaciones
-  const springRotateX = useSpring(rotateX, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
+  const xSpring = useSpring(x);
+  const ySpring = useSpring(y);
+  const zSpring = useSpring(z);
+  const txSpring = useSpring(translateX);
+  const tySpring = useSpring(translateY);
 
-  const springRotateY = useSpring(rotateY, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
+  // const transform = useMotionTemplate`translate3d(${txSpring}%, ${tySpring}em, 0px) scale3d(1, 1, 1) rotateX(${xSpring}deg) rotateY(${ySpring}deg) rotateZ(${zSpring}deg)`;
+  const transform = useMotionTemplate`translate3d(${translateX}%, ${translateY}em, 0px) scale3d(1, 1, 1) rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`;
 
-  const springTranslateX = useSpring(translateX, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
-
-  const springTranslateY = useSpring(translateY, {
-    stiffness: 100,
-    damping: 20,
-    mass: 0.5,
-  });
-
-  // Manejador para actualizar las posiciones del mouse
   const handleMouseMove = (e) => {
-    mouseX.set(e.clientX);
-    mouseY.set(e.clientY);
+    if (!ref.current) return [0, 0];
+
+    const rect = ref.current.getBoundingClientRect();
+
+    const width = rect.width;
+    const height = rect.height;
+    const trx = 3;
+    const trsy = 3;
+    const rotateX = 15;
+    const rotateY = -25;
+    const rotateZ = 15;
+
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    const rX = rotateX - mouseY * 0.008;
+    const rY = rotateY + ((mouseX / width) * 100) / 10;
+    const rZ = rotateZ - (mouseX / width) * 5;
+    const tX = trx - (mouseX / width) * 2 * 3;
+    const tY = trsy - (mouseY / height) * 2 * 3;
+    translateX.set(tX);
+    translateY.set(tY);
+    x.set(rX);
+    y.set(rY);
+    z.set(rZ);
   };
 
-  // Agregar el evento de mousemove al cargar el componente
-  useEffect(() => {
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  const handleMouseLeave = () => {
+    x.set(15);
+    y.set(-25);
+    z.set(15);
+  };
+  const handleScroll = (e) => {
+    console.log(e);
+    translateY.set(50);
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center py-5 px-2">
+    <div
+      className="flex flex-col items-center justify-center py-5 px-2"
+      ref={ref}
+      onScroll={handleScroll}
+      onMouseMove={handleMouseMove}
+      // onMouseLeave={handleMouseLeave}
+    >
       <div className="heading-block flex flex-col justify-center items-center mb-16">
-        <span className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4">
+        <motion.span
+          drag="x"
+          dragConstraints={{
+            top: 0,
+            left: -50,
+            right: 50,
+            bottom: 0,
+          }}
+          className="rounded-full bg-secundario text-principal font-semibold px-4 py-2 mb-4 block"
+        >
           #RESTAURANTEROSEXITOSOS
-        </span>
-        <h2 className="title2-tw text-center uppercase">
+        </motion.span>
+        <motion.h2
+          transition={{ duration: 0.3, delay: 1 }}
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="title2-tw text-center uppercase"
+        >
           Con la confianza de más de
           <br /> 5,000+ RESTAURANTEROS <br /> ALREDEDOR <br /> DEL MUNDO
-        </h2>
+        </motion.h2>
       </div>
       <div className="w-[100%] max-w-[1085px] flex flex-col justify-center items-center">
         <div className="content grid grid-cols-1 md:grid-cols-2 gap-8 px-[20px]">
@@ -89,10 +122,7 @@ const CasosEstudio = () => {
             </p>
             <button className="button-small">VER CLIENTES EXITÓSOS</button>
           </div>
-          <div
-            className="w-full md:col-span-2 relative"
-            onMouseMove={handleMouseMove}
-          >
+          <div className="w-full md:col-span-2 relative">
             <div className="w-full bg-[#fbfbfad9] border-[1px] border-[#e5e5e5] rounded-[1.2em]">
               <div className="w-full relative p-8 md:p-16 flex items-start justify-start flex-col overflow-hidden perspective">
                 <div className="z-20 relative content-text flex flex-col justify-center items-start gap-6">
@@ -110,11 +140,8 @@ const CasosEstudio = () => {
                 </div>
                 <motion.img
                   style={{
-                    translateX: springTranslateX,
-                    translateY: springTranslateY,
-                    rotateX: springRotateX,
-                    rotateY: springRotateY,
                     transformStyle: "preserve-3d",
+                    transform,
                   }}
                   className="z-10 rounded-[1.2em] w-[70%] absolute top-auto -right-[23%] -bottom-[23%] left-auto"
                   src="https://imagenesrutalab.s3.amazonaws.com/impulsoRestaurantero/seccion1/group-friends-eating-restaurant_23-2148006617.jpg"
